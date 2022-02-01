@@ -1,20 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <h2>File uploading form</h2>
+    <uploading-section />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import UploadingSection from "./components/UploadingSection.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { UploadingSection },
+};
 </script>
 
 <style>
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 10%;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 2px 2px grey;
+  padding: 20px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
